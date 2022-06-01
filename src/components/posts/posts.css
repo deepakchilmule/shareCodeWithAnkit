@@ -1,0 +1,26 @@
+
+.container-div-post{
+    display: flex;
+    
+}
+
+.first{
+    
+    width: 300px;
+    border-right: 1px solid black;
+}
+
+.second{
+ 
+}
+.headlines{
+    display: flex;
+    
+    width: 700px;
+    justify-content: space-around;
+}
+
+.underline{
+    border-bottom: 1px solid black;
+    color: orangered;
+}

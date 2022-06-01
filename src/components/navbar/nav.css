@@ -1,0 +1,11 @@
+
+
+.container{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    height: 100px;
+}

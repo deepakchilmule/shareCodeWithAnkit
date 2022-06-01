@@ -1,0 +1,50 @@
+
+
+.pictures{
+    width: 200px;
+    height: 200px;
+   
+}
+
+.featured-container{
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+  padding-top: 30px;
+}
+.picture-div{
+    position: relative;
+    width: 250px;
+}
+
+.city-name{
+   
+    position: absolute;
+    color: white;
+    bottom: 20px;
+}
+
+.properties-div{
+    display: flex;
+   width: 1000px;
+    justify-content: space-between;
+    border: 1px solid beige;
+    border-radius: 20px;
+    overflow: scroll;
+    border: 1px solid red;
+}
+.properties-pictures{
+    width: 200px;
+    height: 200px;
+}
+
+.browse-by-properties{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.individual{
+    margin-left: 15px;
+}
+

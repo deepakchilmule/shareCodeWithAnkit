@@ -1,0 +1,17 @@
+
+.email-div{
+    display: flex;
+    background-color: skyblue;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+input{
+    height: 20px;
+    
+}
+
+button{
+    height: 25px;
+}

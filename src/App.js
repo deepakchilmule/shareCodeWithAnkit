@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/home/Home';
+import HotelsList from './pages/home/list/HotelsList';
+import City from './components/city/City';
+import PostList from './components/posts/PostList';
+import CreatePost from './components/create post/CreatePost';
+import Comments from './components/comments/Comments';
+import Events from './components/events/Events';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <BrowserRouter>
+<Routes>
+ <Route path='/' element={<Home />} />
+ <Route  path='/hotels' element={<HotelsList /> } />
+  <Route path='/hotels/:id' element={ <City /> } /> 
+  <Route path='/posts' element={ <PostList /> } /> 
+  <Route path='/makepost' element={ <CreatePost /> } />
+  <Route path='/comments' element={ <Comments /> } />
+  <Route path='/events' element={ <Events /> } />
+</Routes>
+
+  </BrowserRouter>
 }
 
 export default App;
